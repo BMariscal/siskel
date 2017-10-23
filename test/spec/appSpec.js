@@ -101,7 +101,8 @@ describe('Siskel', function() {
     afterEach(function() {
       MoviesView.prototype.render.restore();
     });
-
+    
+    //console.log(this)
     it('should re-render when the collection sorts', function() {
       collection.sort();
       expect(collectionView.render).to.have.been.called;
